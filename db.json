@@ -1,0 +1,43 @@
+{
+    "product": [{
+            "id": 1,
+            "productName": "Vigor",
+            "costs": 1.02
+        },
+        {
+            "id": 2,
+            "productName": "Carabao",
+            "costs": 0.5
+        },
+        {
+            "id": 3,
+            "productName": "Coca Cola",
+            "costs": 1.2
+        },
+        {
+            "id": 4,
+            "productName": "Sting",
+            "costs": 0.6
+        },
+        {
+            "id": 5,
+            "productName": "Ichitan",
+            "costs": 0.5
+        },
+        {
+            "id": 6,
+            "productName": "Wurk",
+            "costs": 0.4
+        },
+        {
+            "id": 7,
+            "productName": "Olate",
+            "costs": 0.7
+        },
+        {
+            "id": 8,
+            "productName": "7up",
+            "costs": 1.25
+        }
+    ]
+}

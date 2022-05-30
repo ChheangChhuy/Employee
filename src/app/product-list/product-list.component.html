@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="table-1">
+        <table>
+            <th colspan="4" style="font-size:30px;">
+                Drink Menu
+            </th>
+            <tr>
+                <td *ngFor="let head of headers" style="background-color: crimson; color:gainsboro">{{head}}</td>
+            </tr>
+            <tr *ngFor="let product of products">
+                <td>{{product.id}}</td>
+                <td style="text-align: left;">{{product.productName}}</td>
+                <td>$ {{product.costs}}</td>
+                <button type="button" (click)="buy(product.id)">Buy</button>
+            </tr>
+        </table>
+    </div>
+
+    <div class="table-2">
+        <table>
+            <tr>
+                <th colspan="4" style="font-size:30px; border: 1 solid red;">
+                    Checkout
+                </th>
+            </tr>
+            <tr>
+                <td *ngFor="let head of headerOfProduct " style="background-color:burlywood;">
+                    <div id="head">{{head}}</div>
+                </td>
+            </tr>
+            <tr *ngFor="let p of product; index as i">
+                <td style="text-align: left;">{{p.productName}}</td>
+                <td>$ {{p.costs}}</td>
+                <button type="button" (click)="removeItem(i)">Remove</button>
+            </tr>
+            <td style="text-align: left; font-style:oblique; color:firebrick"><b>Total =$ {{totals}} </b> </td>
+        </table>
+    </div>
+</div>
